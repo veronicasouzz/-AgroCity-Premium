@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroCity Premium</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topo">
+
+    <div class="logo">
+        <h1>🌾 AgroCity Premium</h1>
+        <p>Construa a cidade agrícola do futuro</p>
+    </div>
+
+    <button id="modoEscuro">
+        🌙 Modo Escuro
+    </button>
+
+</header>
+
+<section class="dashboard">
+
+    <div class="card">
+        <h3>💰 Moedas</h3>
+        <span id="moedas">500</span>
+    </div>
+
+    <div class="card">
+        <h3>🌱 Sustentabilidade</h3>
+
+        <div class="barra">
+            <div id="barraSustentabilidade"></div>
+        </div>
+
+        <span id="sustentabilidade">50%</span>
+    </div>
+
+    <div class="card">
+        <h3>🏆 Nível</h3>
+        <span id="nivel">1</span>
+    </div>
+
+    <div class="card">
+        <h3>🌾 Produção</h3>
+        <span id="producao">0</span>
+    </div>
+
+</section>
+
+<section class="acoes">
+
+    <button onclick="construirFazenda()">
+        🚜 Fazenda
+    </button>
+
+    <button onclick="criarReserva()">
+        🌳 Reserva
+    </button>
+
+    <button onclick="instalarSolar()">
+        ☀️ Energia Solar
+    </button>
+
+    <button onclick="produzirAlimentos()">
+        🌾 Produzir
+    </button>
+
+</section>
+
+<section class="cidade">
+
+    <h2>🏙️ AgroCity</h2>
+
+    <div id="mapa"></div>
+
+</section>
+
+<section class="conquistas">
+
+    <h2>🏆 Conquistas</h2>
+
+    <ul id="listaConquistas"></ul>
+
+</section>
+
+<section id="mensagem"></section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
